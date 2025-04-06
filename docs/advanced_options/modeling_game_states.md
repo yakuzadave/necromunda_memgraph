@@ -136,4 +136,9 @@ RETURN f.name, t.name;
 
 Sequence of actions for a fighter across turns:
 ```cypher
+MATCH (f:Fighter {name: 'John Doe'})-[:PERFORMED]->(a:Action)-[:OCCURRED_IN]->(t:Turn)
+RETURN a.type, a.result, t.number
+ORDER BY t.number ASC;
+
+```
 
