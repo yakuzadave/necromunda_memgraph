@@ -1,3 +1,35 @@
+---
+title: Machine Learning Pipeline for Necromunda Data from Memgraph
+description: Explore how to build a machine learning pipeline using Memgraph for Necromunda data, optimizing predictions and gang strategies effectively.
+tags:
+    - Data Preparation
+    - Data Science
+    - Feature Engineering
+    - Game Strategy
+    - Graph Databases
+    - Machine Learning
+    - Machine Learning Pipeline.
+    - Memgraph
+    - Necromunda
+    - Neo4j
+    - Predictive Modeling
+    - Python
+    - Random Forest
+    - Skill Analysis
+draft: true
+categories:
+    - Data Preparation
+    - Data Science
+    - Feature Engineering
+    - Graph Databases
+    - Machine Learning
+    - Memgraph
+    - Necromunda
+    - Predictive Modeling
+    - Python Programming.
+    - Random Forest
+slug: machine-learning-pipeline-necromunda-data-memgraph
+---
 # Machine Learning Pipeline for Necromunda Data from Memgraph
 
 ## Objective:
