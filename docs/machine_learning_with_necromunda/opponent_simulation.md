@@ -1,3 +1,34 @@
+---
+title: AI Opponent Simulation with Reinforcement Learning
+description: Explore AI opponent simulation using reinforcement learning to enhance tactical decision-making in Necromunda.
+draft: true
+tags:
+    - AI
+    - AI Training
+    - Game AI
+    - Game Development
+    - Game Environment
+    - Game Strategy.
+    - Gym
+    - Machine Learning
+    - Necromunda
+    - Opponent Simulation
+    - Python
+    - Reinforcement Learning
+    - Stable Baselines3
+    - Tactical Decision-Making
+categories:
+    - AI
+    - Game AI
+    - Game Design
+    - Game Development
+    - Machine Learning
+    - Necromunda
+    - Python Programming
+    - Reinforcement Learning
+    - Simulation
+    - Tactical Decision-Making
+---
 # AI Opponent Simulation with Reinforcement Learning
 
 ## Objective:
