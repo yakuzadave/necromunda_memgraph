@@ -1,3 +1,34 @@
+---
+title: Modeling Game States (Snapshot vs Dynamic)
+description: Explore the differences between Snapshot and Dynamic GameState modeling for effective game state management and analysis.
+draft: true
+tags:
+  - Action Nodes
+  - Complex Queries
+  - Dynamic Modeling
+  - Game Analysis
+  - Game Conditions
+  - Game Design
+  - Game Development
+  - Game Mechanics
+  - Game State Management
+  - Snapshot Modeling
+  - Spatial Awareness
+  - Tactical Analysis
+  - Temporal Relationships
+  - Terrain Modeling
+categories:
+  - Data Structures in Games
+  - Dynamic Modeling
+  - Game Analysis
+  - Game Design
+  - Game Development
+  - Game Mechanics.
+  - Game State Management
+  - Snapshot Modeling
+  - Tactical Analysis
+  - Temporal Relationships
+---
 # Modeling Game States (Snapshot vs Dynamic)
 A. Snapshot GameState Modeling
 This strategy creates a new subgraph each turn:
