@@ -1,11 +1,36 @@
 ---
 title: Optimizing Memgraph Schema for Necromunda Data
-description: ""
+description: Enhance your Necromunda gameplay by optimizing the Memgraph schema for efficient data management and improved game mechanics.
 date: 2025-04-15T15:45:44.453Z
 preview: ""
 draft: true
-tags: []
-categories: []
+tags:
+    - campaign structure
+    - data management
+    - data querying
+    - database design
+    - equipment relationships
+    - fighter types
+    - game design
+    - game mechanics
+    - game scenarios
+    - Memgraph
+    - Necromunda
+    - performance optimization.
+    - schema optimization
+    - tabletop gaming
+categories:
+    - campaign structure
+    - data management
+    - database schema
+    - equipment organization
+    - fighter relationships.
+    - game mechanics
+    - gameplay enhancement
+    - Memgraph
+    - Necromunda
+    - optimization
+slug: optimizing-memgraph-schema-necromunda-data
 ---
 
 # Necromunda Database Schema Structure
