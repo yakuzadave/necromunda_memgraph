@@ -79,9 +79,9 @@ jobs:
             unsafe = true
           EOF
             
-            # Create a minimal theme if not exists
-            mkdir -p themes/hugo-book
-            git clone --depth 1 https://github.com/alex-shpak/hugo-book themes/hugo-book || echo "Theme already exists"
+            # Hugo will fetch the theme via modules, no need to clone manually
+            # mkdir -p themes/hugo-book
+            # git clone --depth 1 https://github.com/alex-shpak/hugo-book themes/hugo-book || echo "Theme already exists"
           fi
       
       - name: Build with Hugo
