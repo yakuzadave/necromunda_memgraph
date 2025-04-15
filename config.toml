@@ -1,0 +1,73 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "Necromunda Memgraph Documentation"
+theme = "hugo-book"
+
+# Book theme options
+[params]
+  # (Optional, default light) Sets color theme: light, dark or auto.
+  # Theme 'auto' switches between dark and light modes based on browser/os preferences
+  BookTheme = "dark"
+  
+  # (Optional, default true) Controls table of contents visibility on right side of pages.
+  # Start and end levels can be controlled with markup.tableOfContents setting.
+  BookToC = true
+  
+  # (Optional, default none) Set the path to a logo for the book. If the logo is
+  # /static/images/logo.png then the path would be 'images/logo.png'
+  # BookLogo = 'images/logo.png'
+  
+  # (Optional, default docs) Configure the base path for your site's sections.
+  BookSection = "docs"
+  
+  # (Optional, default January 2, 2006) Configure the date format used on the pages
+  # - In git information
+  # - In blog posts
+  BookDateFormat = "January 2, 2006"
+  
+  # (Optional, default true) Enable search function with flexsearch,
+  # Index is built on fly, so it might slowdown your website.
+  BookSearch = true
+  
+  # Use dark color scheme in search results
+  BookSearchResultsTheme = "dark"
+  
+  # (Optional, default true) Enables comments template on pages
+  # By default partials/docs/comments.html includes Disqus template
+  # See https://gohugo.io/content-management/comments/#configure-disqus
+  # Can be overwritten by same param in page frontmatter
+  BookComments = false
+  
+  # Configure the path to a repository where your book content is published
+  BookRepo = "https://github.com/yourusername/necromunda_memgraph"
+  
+  # (Optional, default 'commit') Specifies commit option for the "edit this page" link
+  # If you don't specify, path will point to "edit/main/content/" in your repository
+  BookEditPath = "edit/main"
+
+[markup]
+  [markup.highlight]
+    anchorLineNos = false
+    codeFences = true
+    guessSyntax = true
+    hl_Lines = ""
+    lineAnchors = ""
+    lineNoStart = 1
+    lineNos = true
+    lineNumbersInTable = true
+    noClasses = false
+    style = "monokai"
+    tabWidth = 2
+    
+  [markup.goldmark.renderer]
+    unsafe = true  # Allow HTML in markdown files
+
+[menu]
+  [[menu.after]]
+    name = "GitHub"
+    url = "https://github.com/yourusername/necromunda_memgraph"
+    weight = 10
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
