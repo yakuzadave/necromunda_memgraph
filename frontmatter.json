@@ -60,5 +60,8 @@
       "title": "advanced_options",
       "path": "[[workspace]]/docs/advanced_options"
     }
-  ]
+  ],
+  "frontMatter.content.publicFolder": "static",
+  "frontMatter.framework.id": "hugo",
+  "frontMatter.preview.host": "http://localhost:1313"
 }

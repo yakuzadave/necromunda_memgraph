@@ -16,24 +16,23 @@ Memgraph
 - `armor`: List of armor pieces the fighter can wear.​
 - `wounds`: Number of wounds the fighter can sustain before being incapacitated.​
 - `movement`: Movement speed of the fighter (in inches).​
-- `ws`: Weapon Skill rating (combat skill).​
-- `bs`: Ballistic Skill rating (ranged combat skill).​
-- `s`: Strength rating (physical strength).​
-- `t`: Toughness rating (resilience).​
-- `w`: Willpower rating (mental fortitude).​
-- `i`: Initiative rating (reaction speed).​
-- `a`: Attacks that the fighter can make (in each round). For example `1` means that they can make one attack per action. ​​
-- `ld`: Leadership rating (command ability).​
-- `cl`: Cool rating (ability to remain calm under pressure).​
-- `wil`: Will rating (mental resilience).​
-- `int`: Intelligence rating (problem-solving ability).​
+- `weapon_skill`: Weapon Skill rating (combat skill).​
+- `ballistics_skill`: Ballistic Skill rating (ranged combat skill).​
+- `strength`: Strength rating (physical strength).​
+- `toughness`: Toughness rating (resilience).​
+- `willpower`: Willpower rating (mental fortitude).​
+- `initiative`: Initiative rating (reaction speed).​
+- `attacks`: Attacks that the fighter can make (in each round). For example `1` means that they can make one attack per action. ​​
+- `leadership`: Leadership rating (command ability).​
+- `cool`: Cool rating (ability to remain calm under pressure).​
+- `will`: Will rating (mental resilience).​
+- `intelligence`: Intelligence rating (problem-solving ability).​
 - `status`: Current condition (e.g., Active, Pinned, Seriously Injured, Out of Action).​
 - `injuries`: List of sustained injuries.​
 
 ## Cypher Query to Create a Fighter Node:
 ```cypher
-MERGE (f:Fighter {name: 'Goliath Brute', type: 'Ganger', gang: 'House Goliath', faction: 'House Goliath', experience: 0, skills: [], equipment: [], weapons: [], armor: [], wounds: 1, movement: 4, ws: 3, bs: 5, s: 4, t: 4, w: 1, i: 3, a: 1, ld: 7, cl: 6, wil: 5, int: 4, status: 'Active', injuries: []})
-RETURN f
+MERGE (f:Fighter {name: 'John Doe', type: 'Ganger', gang: 'House Goliath', faction: 'House Goliath', experience: 0, skills: [], equipment: [], weapons: [], armor: [], wounds: 1, movement: 4, weapon_skill: 3, ballistics_skill: 3, strength: 3, toughness: 3, willpower: 3, initiative: 3, attacks: 1, leadership: 3, cool: 3, will: 3, intelligence: 3, status: 'Active', injuries: []})
 ```
 
 ## Skills Nodes
