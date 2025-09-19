@@ -1,0 +1,17 @@
+# Hugo build output
+public/
+resources/
+
+# Temporary files
+*~
+.DS_Store
+.vscode/
+.idea/
+
+# Hugo cache
+.hugo_build.lock
+
+# Config backups
+config*.backup
+config-temp.toml
+config-github-pages.toml
