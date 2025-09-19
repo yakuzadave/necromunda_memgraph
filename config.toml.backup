@@ -1,6 +1,7 @@
 baseURL = "/"
 languageCode = "en-us"
 title = "Necromunda Memgraph Documentation"
+theme = "hugo-book"
 
 # Hugo Module settings
 [module]
