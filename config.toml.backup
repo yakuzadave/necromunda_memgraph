@@ -1,6 +1,7 @@
 baseURL = "/"
 languageCode = "en-us"
 title = "Necromunda Memgraph Documentation"
+theme = "hugo-book"
 
 # Hugo Module settings
 [module]
@@ -43,7 +44,7 @@ title = "Necromunda Memgraph Documentation"
   BookComments = false
   
   # Configure the path to a repository where your book content is published
-  BookRepo = "https://github.com/yakuzadave/necromunda_memgraph"
+  BookRepo = "https://github.com/yourusername/necromunda_memgraph"
   
   # (Optional, default 'commit') Specifies commit option for the "edit this page" link
   # If you don't specify, path will point to "edit/main/content/" in your repository
@@ -69,7 +70,7 @@ title = "Necromunda Memgraph Documentation"
 [menu]
   [[menu.after]]
     name = "GitHub"
-    url = "https://github.com/yakuzadave/necromunda_memgraph"
+    url = "https://github.com/yourusername/necromunda_memgraph"
     weight = 10
 
 [taxonomies]

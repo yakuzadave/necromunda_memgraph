@@ -7,8 +7,12 @@ on:
     branches: ["main"]
     paths:
       - 'docs/**'
+      - 'content/**'
       - 'queries/**'
       - 'config.toml'
+      - 'go.mod'
+      - 'go.sum'
+      - 'assets/**'
       - '.github/workflows/**'
 
   # Allows you to run this workflow manually from the Actions tab
@@ -35,7 +39,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.128.0
+      HUGO_VERSION: 0.146.0
     steps:
       - name: Install Hugo CLI
         run: |
@@ -60,6 +64,14 @@ jobs:
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
       
+      - name: Initialize Hugo modules if needed
+        run: |
+          if [ ! -f "go.mod" ]; then
+            hugo mod init github.com/yakuzadave/necromunda_memgraph
+          fi
+          hugo mod get github.com/alex-shpak/hugo-book
+          hugo mod tidy
+      
       - name: Create Hugo configuration if it doesn't exist
         run: |
           if [ ! -f "config.toml" ] && [ ! -f "hugo.toml" ]; then
@@ -67,21 +79,21 @@ jobs:
           baseURL = "/"
           languageCode = "en-us"
           title = "Necromunda Memgraph Documentation"
-          theme = "hugo-book"
+          
+          # Hugo Module settings
+          [module]
+            [[module.imports]]
+              path = "github.com/alex-shpak/hugo-book"
           
           [params]
             BookMenuBundle = "/menu"
             BookSection = "docs"
-            BookRepo = "https://github.com/yourusername/necromunda_memgraph"
+            BookRepo = "https://github.com/yakuzadave/necromunda_memgraph"
             BookEditPath = "edit/main"
           
           [markup.goldmark.renderer]
             unsafe = true
           EOF
-            
-            # Hugo will fetch the theme via modules, no need to clone manually
-            # mkdir -p themes/hugo-book
-            # git clone --depth 1 https://github.com/alex-shpak/hugo-book themes/hugo-book || echo "Theme already exists"
           fi
       
       - name: Build with Hugo
@@ -101,7 +113,7 @@ jobs:
           
           # Create a custom config file that overrides the baseURL with the proper GitHub Pages URL
           cat > config.github-pages.toml << EOF
-          baseURL = "${{ steps.pages.outputs.base_url }}/"
+          baseURL = "${{ steps.pages.outputs.base_url }}"
           EOF
           
           # Run Hugo build with properly configured baseURL
